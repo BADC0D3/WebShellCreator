@@ -35,8 +35,8 @@ args = parser.parse_args()
 def f(x):
     return {
         'php': 'rs.php',
-        'asp': 'rs.asp',
-	'aspx' : 'rs.aspx'
+        'asp': 'cmd.asp',
+	'aspx' : 'cmd.aspx'
     }[x]
 
 srcfile = 'templates/'+f(args.TYPE)
