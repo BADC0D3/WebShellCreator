@@ -19,17 +19,17 @@ requiredparser.add_argument('-ip',
                 required='true',
                 help='Enter local host IP Address')
 
-requiredparser.add_argument('-o',
-                metavar='Output_File',
-                dest='OUTPUT',
-                required='true',
-                help='Enter the name of the output file')
-
 parser.add_argument('-p',
                 metavar='Port',
                 dest='PORT',
                 default='8080',
                 help='Enter local host PORT, Default: 8080')
+
+requiredparser.add_argument('-o',
+                metavar='Output_File',
+                dest='OUTPUT',
+                required='true',
+                help='Enter the name of the output file')
 
 args = parser.parse_args()
 
